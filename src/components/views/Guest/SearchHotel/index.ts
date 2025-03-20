@@ -1,3 +1,3 @@
-import Home from "./SearchHotel";
+import SearchHotel from "./SearchHotel";
 
-export default Home;
+export default SearchHotel;

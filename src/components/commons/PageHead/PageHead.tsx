@@ -4,7 +4,7 @@ interface PropTypes {
   title?: string;
 }
 const PageHead = (props: PropTypes) => {
-  const { title = "Acara" } = props;
+  const { title = "StayKuy" } = props;
 
   return (
     <Head>

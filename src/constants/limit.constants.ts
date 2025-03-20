@@ -1,7 +1,8 @@
 const LIMIT_LISTS = [
-  { label: "8", value: 8 },
-  { label: "12", value: 12 },
-  { label: "16", value: 16 },
+  { label: "10", value: 10 },
+  { label: "20", value: 20 },
+  { label: "30", value: 30 },
+  { label: "50", value: 50 },
 ];
 
 const LIMIT_DEFAULT = LIMIT_LISTS[0].value;

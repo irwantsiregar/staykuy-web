@@ -7,12 +7,15 @@ First, run the development server:
 ```bash
 npm run dev
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+
+### ROUTE PAGES
+
+Search Hotel: /hotel
+Result or List Hotel: /hotel/search
+Detail Hotel: /hotel/search
+
+TT: Irwanto Siregar
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
