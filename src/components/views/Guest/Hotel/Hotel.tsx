@@ -71,12 +71,13 @@ function Hotel({ hotels }: THotelsProps) {
                       {[1, 2, 3, 4, 5].map((item) => (
                         <Checkbox value={`${item}`}>
                           <div className="gap-2 flex">
-                            {Array.from({ length: item }).map((_) => (
+                            {Array.from({ length: item }).map((_, i) => (
                               <NextImage
                                 src="/images/hotels/star.svg"
                                 alt="Star"
                                 width={18}
                                 height={18}
+                                key={i}
                               />
                             ))}
                           </div>
@@ -136,6 +137,7 @@ function Hotel({ hotels }: THotelsProps) {
                   isBlurred
                   className="border-none bg-background/60 dark:bg-default-100/50 w-full mb-4"
                   shadow="md"
+                  key={hotel.id}
                 >
                   <CardBody className="p-0">
                     <div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-5 items-center justify-center">
@@ -158,14 +160,17 @@ function Hotel({ hotels }: THotelsProps) {
                             </h3>
 
                             <div className="gap-2 flex">
-                              {Array.from({ length: hotel.star }).map((_) => (
-                                <NextImage
-                                  src="/images/hotels/star.svg"
-                                  alt="Star"
-                                  width={18}
-                                  height={18}
-                                />
-                              ))}
+                              {Array.from({ length: hotel.star }).map(
+                                (_, i) => (
+                                  <NextImage
+                                    src="/images/hotels/star.svg"
+                                    alt="Star"
+                                    width={18}
+                                    height={18}
+                                    key={i}
+                                  />
+                                )
+                              )}
                             </div>
 
                             <div className="gap-2 flex items-center">

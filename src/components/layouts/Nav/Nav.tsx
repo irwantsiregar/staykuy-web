@@ -1,18 +1,17 @@
 import {
-  Navbar,
-  NavbarBrand,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-  NavbarContent,
-  NavbarItem,
-  Link,
-  Button,
-  Dropdown,
-  DropdownTrigger,
   Avatar,
+  Dropdown,
   DropdownItem,
   DropdownMenu,
+  DropdownTrigger,
+  Link,
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarMenuToggle,
 } from "@heroui/react";
 
 export const AcmeLogo = () => {

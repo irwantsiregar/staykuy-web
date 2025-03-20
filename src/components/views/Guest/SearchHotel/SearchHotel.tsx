@@ -24,6 +24,8 @@ import { useRouter } from "next/router";
 
 export default function SearchHotel({ cities }: TSearchHotelProps) {
   const [action, setAction] = useState<string | null>(null);
+  console.info(action);
+
   const [searchCity, setSearchCity] = useState<string>("");
   const [selectedCity, setSelectedCity] = useState<ICities | null>(null);
 
